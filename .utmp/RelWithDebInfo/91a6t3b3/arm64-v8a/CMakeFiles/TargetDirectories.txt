@@ -1,0 +1,5 @@
+D:/unity/ar-base/.utmp/RelWithDebInfo/91a6t3b3/arm64-v8a/CMakeFiles/edit_cache.dir
+D:/unity/ar-base/.utmp/RelWithDebInfo/91a6t3b3/arm64-v8a/CMakeFiles/rebuild_cache.dir
+D:/unity/ar-base/.utmp/RelWithDebInfo/91a6t3b3/arm64-v8a/GameActivity/CMakeFiles/game.dir
+D:/unity/ar-base/.utmp/RelWithDebInfo/91a6t3b3/arm64-v8a/GameActivity/CMakeFiles/edit_cache.dir
+D:/unity/ar-base/.utmp/RelWithDebInfo/91a6t3b3/arm64-v8a/GameActivity/CMakeFiles/rebuild_cache.dir
