@@ -1,27 +1,59 @@
-using System;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.ARFoundation;
 
 public class PrefabCreator : MonoBehaviour
 {
-    [SerializeField] private GameObject dragonPrefab;
-    [SerializeField] private Vector3 prefabOffset;
+    [Header("Danh sách prefab theo tên ảnh")]
+    public List<ImagePrefabPair> prefabPairs;
 
-    private GameObject dragon;
-    private ARTrackedImageManager aRTrackedImageManager;
-    
-    private void OnEnable()
+    private Dictionary<string, GameObject> prefabDict = new Dictionary<string, GameObject>();
+    private ARTrackedImageManager trackedImageManager;
+
+    [System.Serializable]
+    public class ImagePrefabPair
     {
-        aRTrackedImageManager = gameObject.GetComponent<ARTrackedImageManager>();
-        aRTrackedImageManager.trackedImagesChanged += OnImageChanged;
+        public string imageName;
+        public GameObject prefab;
     }
 
-    private void OnImageChanged(ARTrackedImagesChangedEventArgs obj)
+    private void Awake()
     {
-        foreach (ARTrackedImage image in obj.added)
+        trackedImageManager = GetComponent<ARTrackedImageManager>();
+
+        foreach (var pair in prefabPairs)
         {
-            dragon = Instantiate(dragonPrefab, image.transform);
-            dragon.transform.position += prefabOffset;
+            if (!prefabDict.ContainsKey(pair.imageName))
+            {
+                prefabDict.Add(pair.imageName, pair.prefab);
+            }
         }
     }
+
+    private void OnEnable()
+    {
+        trackedImageManager.trackedImagesChanged += OnImageChanged;
+    }
+
+    private void OnDisable()
+    {
+        trackedImageManager.trackedImagesChanged -= OnImageChanged;
+    }
+
+    private void OnImageChanged(ARTrackedImagesChangedEventArgs args)
+{
+    foreach (var trackedImage in args.added)
+    {
+        string imgName = trackedImage.referenceImage.name;
+
+        UIManager.Instance.ShowAnimalName(imgName);
+
+        if (prefabDict.ContainsKey(imgName))
+        {
+            GameObject newPrefab = Instantiate(prefabDict[imgName], trackedImage.transform);
+            newPrefab.transform.localPosition = Vector3.zero;
+        }
+    }
+}
+
 }
