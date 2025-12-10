@@ -17,6 +17,11 @@ public class UIManager : MonoBehaviour
     public void ShowPartName(string name)
     {
         partNameText.text = name;
+        
+        if (AudioManager.Instance != null)
+        {
+            AudioManager.Instance.PlayPartAudio(name);
+        }
     }
 
     public void ShowAnimalName(string name)

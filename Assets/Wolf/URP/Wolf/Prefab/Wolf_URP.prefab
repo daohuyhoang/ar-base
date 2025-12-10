@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5156678376413769162}
   - component: {fileID: 8114512281650393077}
   - component: {fileID: 7184497708101933772}
+  - component: {fileID: 2808027003996486405}
   m_Layer: 0
   m_Name: Chan
   m_TagString: Untagged
@@ -70,6 +71,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   partName: Leg
   animalController: {fileID: 2101037141098123438}
+--- !u!114 &2808027003996486405
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 873809283579153718}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a97b559743e5e145a74eb821700404d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  partName: Leg
+  animalController: {fileID: 2101037141098123438}
 --- !u!1 &1100417487738417784
 GameObject:
   m_ObjectHideFlags: 0
@@ -81,6 +96,7 @@ GameObject:
   - component: {fileID: 610783201494799385}
   - component: {fileID: 5440627293151384520}
   - component: {fileID: 5524760019503401255}
+  - component: {fileID: 7127653334268620730}
   m_Layer: 0
   m_Name: Chan (1)
   m_TagString: Untagged
@@ -140,6 +156,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   partName: Leg
   animalController: {fileID: 2101037141098123438}
+--- !u!114 &7127653334268620730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1100417487738417784}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a97b559743e5e145a74eb821700404d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  partName: Leg
+  animalController: {fileID: 2101037141098123438}
 --- !u!1 &1434046837472155815
 GameObject:
   m_ObjectHideFlags: 0
@@ -151,6 +181,7 @@ GameObject:
   - component: {fileID: 2408072655099153065}
   - component: {fileID: 7302435592280380310}
   - component: {fileID: 5301815675103219677}
+  - component: {fileID: 3533962615771136052}
   m_Layer: 0
   m_Name: Chan (3)
   m_TagString: Untagged
@@ -210,6 +241,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   partName: Leg
   animalController: {fileID: 2101037141098123438}
+--- !u!114 &3533962615771136052
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1434046837472155815}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a97b559743e5e145a74eb821700404d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  partName: Leg
+  animalController: {fileID: 2101037141098123438}
 --- !u!1 &1488078705756826006
 GameObject:
   m_ObjectHideFlags: 0
@@ -221,6 +266,7 @@ GameObject:
   - component: {fileID: 2212899640370554143}
   - component: {fileID: 4240784423027916258}
   - component: {fileID: 9218945797769403431}
+  - component: {fileID: 1852376427989170849}
   m_Layer: 0
   m_Name: Chan (2)
   m_TagString: Untagged
@@ -280,6 +326,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   partName: Leg
   animalController: {fileID: 2101037141098123438}
+--- !u!114 &1852376427989170849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1488078705756826006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a97b559743e5e145a74eb821700404d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  partName: Leg
+  animalController: {fileID: 2101037141098123438}
 --- !u!1 &3680483548669020044
 GameObject:
   m_ObjectHideFlags: 0
@@ -291,6 +351,7 @@ GameObject:
   - component: {fileID: 6250456104625434707}
   - component: {fileID: 6215428101657322958}
   - component: {fileID: 6412647649852121643}
+  - component: {fileID: 1528419800656449460}
   m_Layer: 0
   m_Name: Dau
   m_TagString: Untagged
@@ -350,6 +411,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   partName: Head
   animalController: {fileID: 2101037141098123438}
+--- !u!114 &1528419800656449460
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3680483548669020044}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a97b559743e5e145a74eb821700404d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  partName: Head
+  animalController: {fileID: 2101037141098123438}
 --- !u!1 &8438127686863940474
 GameObject:
   m_ObjectHideFlags: 0
@@ -362,6 +437,7 @@ GameObject:
   - component: {fileID: 5425906052369559782}
   - component: {fileID: 7707363416215430535}
   - component: {fileID: 4375438089435417779}
+  - component: {fileID: 5496494492077606611}
   m_Layer: 0
   m_Name: Than
   m_TagString: Untagged
@@ -433,6 +509,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   partName: Body
   animalController: {fileID: 2101037141098123438}
+--- !u!114 &5496494492077606611
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8438127686863940474}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a97b559743e5e145a74eb821700404d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  partName: Body
+  animalController: {fileID: 2101037141098123438}
 --- !u!1 &8889570425820539717
 GameObject:
   m_ObjectHideFlags: 0
@@ -444,6 +534,7 @@ GameObject:
   - component: {fileID: 8500123876484312376}
   - component: {fileID: 5131229591468606016}
   - component: {fileID: 5030486590565913930}
+  - component: {fileID: 471780960059238285}
   m_Layer: 0
   m_Name: Duoi
   m_TagString: Untagged
@@ -503,6 +594,20 @@ CapsuleCollider:
   m_Height: 0.44
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &471780960059238285
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8889570425820539717}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a97b559743e5e145a74eb821700404d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  partName: Tail
+  animalController: {fileID: 2101037141098123438}
 --- !u!1 &9053975156031224764
 GameObject:
   m_ObjectHideFlags: 0
