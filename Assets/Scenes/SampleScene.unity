@@ -785,9 +785,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefabPairs:
-  - imageName: beer
+  - imageName: bear
     prefab: {fileID: 7962199819078159310, guid: f5b41ba4c79702547a89de7544b80656, type: 3}
-  spawnPoint: {fileID: 0}
+  - imageName: wolf
+    prefab: {fileID: 8867960657160430145, guid: 2c201f6401314d44d8ae94ca75376bab, type: 3}
+  spawnPoint: {fileID: 1830814236}
 --- !u!114 &584306961
 MonoBehaviour:
   m_ObjectHideFlags: 0

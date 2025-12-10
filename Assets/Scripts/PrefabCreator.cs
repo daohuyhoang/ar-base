@@ -4,13 +4,13 @@ using UnityEngine.XR.ARFoundation;
 
 public class PrefabCreator : MonoBehaviour
 {
-    [Header("Danh sách prefab theo tên ảnh")]
     [SerializeField]
     private List<ImagePrefabPair> prefabPairs;
     [SerializeField] private Transform spawnPoint;
 
     private Dictionary<string, GameObject> prefabDict = new Dictionary<string, GameObject>();
     private ARTrackedImageManager trackedImageManager;
+    private GameObject currentSpawnedModel;
 
     [System.Serializable]
     public class ImagePrefabPair
@@ -52,11 +52,17 @@ public class PrefabCreator : MonoBehaviour
 
             if (prefabDict.ContainsKey(imgName))
             {
+                if (currentSpawnedModel != null)
+                {
+                    Destroy(currentSpawnedModel);
+                }
+
                 GameObject newPrefab = Instantiate(prefabDict[imgName], spawnPoint);
                 newPrefab.transform.localPosition = Vector3.zero;
                 newPrefab.transform.localRotation = Quaternion.identity;
+
+                currentSpawnedModel = newPrefab;
             }
         }
     }
-
 }
