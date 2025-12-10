@@ -789,6 +789,8 @@ MonoBehaviour:
     prefab: {fileID: 7962199819078159310, guid: f5b41ba4c79702547a89de7544b80656, type: 3}
   - imageName: wolf
     prefab: {fileID: 8867960657160430145, guid: 2c201f6401314d44d8ae94ca75376bab, type: 3}
+  - imageName: dragon
+    prefab: {fileID: 194904, guid: 445a5c29e7f715947b713a753f242af0, type: 3}
   spawnPoint: {fileID: 1830814236}
 --- !u!114 &584306961
 MonoBehaviour:
@@ -1111,6 +1113,8 @@ MonoBehaviour:
     audioClip: {fileID: 8300000, guid: 1176c0ee7d5ea814d9a00c4754155d27, type: 3}
   - partName: Tail
     audioClip: {fileID: 8300000, guid: a23d9fe46ca9579429e4e007f4b23742, type: 3}
+  - partName: Wing
+    audioClip: {fileID: 8300000, guid: 59146aa5d5b538f45870301d4bbb7474, type: 3}
 --- !u!4 &953095778
 Transform:
   m_ObjectHideFlags: 0
