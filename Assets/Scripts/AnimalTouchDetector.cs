@@ -11,7 +11,6 @@ public class AnimalTouchDetector : MonoBehaviour
 
     private void Update()
     {
-        // Test trong Editor (chuột)
         #if UNITY_EDITOR
         if (Input.GetMouseButtonDown(0))
         {
@@ -26,7 +25,6 @@ public class AnimalTouchDetector : MonoBehaviour
         }
         #endif
 
-        // Test trên Android (touch)
         if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)
         {
             Ray ray = cam.ScreenPointToRay(Input.GetTouch(0).position);

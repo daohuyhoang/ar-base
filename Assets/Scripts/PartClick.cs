@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class PartClick : MonoBehaviour
 {
-    public string partName;
-    public AnimalController animalController;
+    [SerializeField] private string partName;
+    [SerializeField] private AnimalController animalController;
 
     private void OnMouseDown()
     {

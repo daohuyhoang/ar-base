@@ -6,8 +6,8 @@ public class UIManager : MonoBehaviour
 {
     public static UIManager Instance;
 
-    public TMP_Text partNameText;
-    public TMP_Text animalNameText;
+    [SerializeField] private TMP_Text partNameText;
+    [SerializeField] private TMP_Text animalNameText;
 
     private void Awake()
     {

@@ -5,7 +5,9 @@ using UnityEngine.XR.ARFoundation;
 public class PrefabCreator : MonoBehaviour
 {
     [Header("Danh sách prefab theo tên ảnh")]
-    public List<ImagePrefabPair> prefabPairs;
+    [SerializeField]
+    private List<ImagePrefabPair> prefabPairs;
+    [SerializeField] private Transform spawnPoint;
 
     private Dictionary<string, GameObject> prefabDict = new Dictionary<string, GameObject>();
     private ARTrackedImageManager trackedImageManager;
@@ -41,19 +43,20 @@ public class PrefabCreator : MonoBehaviour
     }
 
     private void OnImageChanged(ARTrackedImagesChangedEventArgs args)
-{
-    foreach (var trackedImage in args.added)
     {
-        string imgName = trackedImage.referenceImage.name;
-
-        UIManager.Instance.ShowAnimalName(imgName);
-
-        if (prefabDict.ContainsKey(imgName))
+        foreach (var trackedImage in args.added)
         {
-            GameObject newPrefab = Instantiate(prefabDict[imgName], trackedImage.transform);
-            newPrefab.transform.localPosition = Vector3.zero;
+            string imgName = trackedImage.referenceImage.name;
+
+            UIManager.Instance.ShowAnimalName(imgName);
+
+            if (prefabDict.ContainsKey(imgName))
+            {
+                GameObject newPrefab = Instantiate(prefabDict[imgName], spawnPoint);
+                newPrefab.transform.localPosition = Vector3.zero;
+                newPrefab.transform.localRotation = Quaternion.identity;
+            }
         }
     }
-}
 
 }
